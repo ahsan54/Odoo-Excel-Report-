@@ -1,9 +1,15 @@
 # Odoo-Excel-Report-
 
+
+
 ## Model.Py
 
     def print_xlsx_salary_register(self):
         return self.env.ref("ModuleName.Report_Id").report_action(self)
+
+
+
+
 
 ## Report.Xml
 
@@ -19,9 +25,15 @@
     />
 </odoo>
 
+
+
+
+
 ## Report.Py
 rom odoo import fields, models, api, _
+
 from odoo.exceptions import UserError
+
 from odoo.tools import rgb_to_hex
 
 
